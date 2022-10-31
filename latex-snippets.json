@@ -1,0 +1,103 @@
+{
+	"report": {
+		"prefix": "report",
+		"body": [
+			"\\documentclass[${1:a4paper,10pt}]{${2:jsarticle}}",
+			"",
+			"",
+			"% Formula",
+			"\\usepackage{amsmath,amsfonts}",
+			"\\usepackage{bm}",
+			"\\numberwithin{equation}{section}",
+			"% Image",
+			"\\usepackage[dvipdfmx]{graphicx}",
+			"% Author affiliation",
+			"\\usepackage{authblk}",
+			"${3}",
+			"",
+			"\\begin{document}",
+			"",
+			"\\title{${4}}",
+			"\\author{${5}}",
+			"\\affil{${6}}",
+			"\\date{${7:\\today}}",
+			"\\maketitle",
+			"",
+			"",
+			"$0",
+			"",
+			"",
+			"\\end{document}",
+		],
+		"description": "A template for reports written in Japanese"
+	},
+
+	"equation": {
+		"prefix": "eq",
+		"body": [
+			"\\begin{equation}",
+			"\t\\begin{split}",
+			"\t\t${1}",
+			"\t\\end{split}",
+			"\\end{equation}",
+		],
+		"description": "Multi-line equations with only one eq. number"
+	},
+
+	"eq-align": {
+		"prefix": "eq-align",
+		"body": [
+			"\\begin{align}",
+			"\t\t${1}",
+			"\\end{align}",
+		],
+		"description": "Multi-line equations with each eq. numbers"
+	},
+	
+	"table": {
+		"prefix": "ta",
+		"body": [
+			"\\begin{table}[htbp]",
+			"\t\\centering",
+			"\t\\caption{${1}}",
+			"\t\\begin{tabular}{${2}}",
+			"\t\t${3}",
+			"\t\\end{tabular}",
+			"\\end{table}",
+		],
+		"description": "A table with a"
+	},
+
+	"figure": {
+		"prefix": "fi",
+		"body": [
+			"\\begin{figure}[htbp]",
+			"\t\\centering",
+			"\t\\includegraphics[scale = 1.0]{${1}}",
+			"\t\\caption{${2}}",
+			"\t\\label{fig:${3}}",
+			"\\end{figure}",
+		],
+		"description": "A figure with a caption"
+	},
+
+	"enumerate": {
+		"prefix": "enu",
+		"body": [
+			"\\begin{enumerate}",
+			"\t\\item ${1}",
+			"\\end{enumerate}",
+		],
+		"description": "Itemization with number"
+	},
+
+	"Itemization": {
+		"prefix": "ite",
+		"body": [
+			"\\begin{itemize}",
+			"\t\\item ${1}",
+			"\\end{itemize}",
+		],
+		"description": "Itemization with bullet points"
+	}
+}
