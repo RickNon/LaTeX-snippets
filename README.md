@@ -1,5 +1,5 @@
 # LaTeX-snippets
-Snippets for LaTeX in VSCode are released latex-snippets.json.
+Snippets for LaTeX in VSCode are written in latex-snippets.json.
 
 You can change the invocation name arbitrarily after 'prefix'.
 
